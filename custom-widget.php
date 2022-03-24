@@ -18,10 +18,10 @@ parent::__construct(
 'custom_widget_nevo', 
 
 // Widget name will appear in UI
-__('Cloudways Widget', 'custom_widget_nevo_domain'), 
+__('Custom Widget', 'custom_widget_nevo_domain'), 
 
 // Widget description
-array( 'description' => __( 'Sample widget based on Testing Widgets', 'custom_widget_nevo_domain' ), ) 
+array( 'description' => __( 'Custom Widgets', 'custom_widget_nevo_domain' ), ) 
 );
 }
 
@@ -73,5 +73,7 @@ function cw_load_widget() {
  register_widget( 'custom_widget_nevo' );
 }
 add_action( 'widgets_init', 'cw_load_widget' );
+
+
 
 
